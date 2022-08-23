@@ -1,0 +1,53 @@
+.languageContainer {
+    display: flex;
+    justify-content: end;
+    overflow: visible;
+    height: 3rem;
+    font-size: small;
+    margin-left: 86px;
+    
+}
+
+.languages {
+    display: flex;
+    align-items: center;
+    color: red;
+    cursor: pointer;
+}
+
+.languages::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 32px;
+}
+
+.imgSelector{
+    width: 22px;
+    
+    margin-right: 7px;
+}
+
+
+@media (max-width:990px) {
+    .languageContainer {
+        display: flex;
+        justify-content: end;
+        overflow: visible;
+        height: 3rem;
+        font-size: small;
+        margin-left: 24%;
+        margin-top: 10%;
+    }
+
+    .imgSelector {
+        width: 34px;
+        margin-left: -6px;
+        margin-right: 35px;
+    }
+
+    .languageContainer {
+        justify-content: start;
+        margin-left: 25%;
+    }
+}

@@ -1,0 +1,365 @@
+.slideshow-containerr {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.motto {
+    color: black;
+    display: none;
+    margin-top: 15px;
+    text-justify: inter-word;
+    font-weight: bold;
+    font-family: 'Copperplate', Copperplate Gothic;
+    overflow-wrap: break-word;
+}
+
+#confirm {
+    display: none;
+    background-color: #baffd6;
+    color: #000000;
+    border: 1px solid #00ff73;
+    position: fixed;
+    width: 300px;
+    height: 100px;
+    left: 40%;
+    top: 40%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#confirm button {
+    background-color: #FFFFFF;
+    display: inline-block;
+    border-radius: 12px;
+    border: 4px solid #2feb11;
+    padding: 5px;
+    text-align: center;
+    width: 60px;
+    cursor: pointer;
+    margin-top: -4%;
+}
+
+#confirm .message {
+    text-align: center;
+    color: grey;
+    font-weight: 900;    
+    margin-top: -17%;
+}
+
+.textInSlider {
+    color: white;
+    font-size: 4vw;
+    font-weight: 900
+}
+
+.fadeeItemInSlider {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .1
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.secondImageInSlider {
+    bottom: 105px;
+    width: 34%;
+    position: absolute;
+    left: 30%;
+}
+
+.about-intro{
+   margin-top: 10%;
+}
+
+.textInAboutHeaders{
+    text-align: justify;
+}
+
+.alert {
+    display: none;
+}
+
+#myVideo {
+    position: absolute;
+    height: 83%;
+    width: 100%;
+    border-top: 20px solid #73AD21;
+    border-bottom: 20px solid #73AD21;
+    object-fit: cover;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    color: #012970;
+}
+
+.hero h2 {
+    color: #444444;
+    margin: 15px 0 0 0;
+    font-size: 26px;
+}
+
+.hero .btn-get-started {
+    margin-top: 30px;
+    line-height: 0;
+    padding: 15px 40px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #fff;
+    background: #4154f1;
+    box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+}
+
+.hero .btn-get-started span {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.hero .btn-get-started i {
+    margin-left: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.hero .btn-get-started:hover i {
+    transform: translateX(5px);
+}
+
+.hero .hero-img {
+    text-align: right;
+}
+
+
+#vacaPIC {
+    width: 30%;
+}
+
+#vacaTRUCKS {
+    width: 51%;
+    margin-left: 15%;
+}
+
+.vacaText {
+    font-size: 35px;
+}
+
+.navbar-mobile ul {
+    height: 55%;
+}
+
+#vacaDRIVER {
+    display: none;
+    width: 200px;
+}
+
+@media (min-width: 1024px) {
+    .hero {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero {
+        height: 800px;
+        padding: 120px 0 60px 0;
+    }
+
+    .hero .hero-img {
+        text-align: center;
+        margin-top: 80px;
+    }
+
+    .hero .hero-img img {
+        width: 80%;
+    }
+    #myVideo {
+        top: 9%;
+    }
+}
+
+@media (max-width: 800px) {
+    .YMNLogoInSLider {
+        width: 45%;
+        margin-left: 15%;
+        margin-top: 36%;
+    }
+
+    .secondImageInSlider {
+        width: 48%;
+        position: absolute;
+        height: 164%;
+        bottom: 99%;
+        left: 28%;
+    }
+
+    .textInSlider {
+        font-size: 36px;
+    }
+}
+
+@media (min-width:930px) and (max-width:1300px) {
+    .secondImageInSlider {
+        width: 89%;
+        position: absolute;
+        height: 270%;
+        bottom: 99%;
+        left: 9%;
+    }
+
+    .textInSlider {
+        font-size: 30px;
+    }
+}
+
+
+
+@media (max-width:600px) {
+
+    #myVideo {
+        top: 15%;
+    }
+
+    #confirm {
+        display: none;
+        background-color: #baffd6;
+        color: #000000;
+        border: 1px solid #00ff73;
+        position: absolute;
+        width: 73%;        
+        left: 13%;
+        top: 68%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .hero {
+        height: 612px;
+    }
+
+    .motto {
+        display: inline-block;
+        font-size: 11px;
+    }
+
+    .header {
+        padding: 0px 0;
+    }
+    
+    .contactGevegens {
+        position: absolute;
+        right: -4px;
+        width: 210px;
+        margin-top: 43px;
+    }
+
+    #contactHeader{
+        top: 15px;        
+    }
+
+    #servicesHeader {
+        top: 25px;
+        text-align: center;
+    }
+
+    .horizontalContact {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .horizontalContactLI {
+        float: left;
+        margin-right: 5%;
+    }
+
+    .footer .footer-top .footer-links {
+        margin-bottom: -23px;
+    }
+
+    .footer .footer-top .footer-links ul li:first-child{
+        padding: 9px;
+    }
+
+    .sociallinksDiv {
+        position: relative;
+        top: 290px;
+        margin-left: 31%;
+    }
+
+    .imgALink {
+        position: absolute;
+        left: 133px;
+        margin-top: 16%;
+    }
+
+    .footer .footer-top{
+        padding: 0px;
+    }
+
+
+    .counts .count-box{
+        padding: 1px;
+        height: 109%;
+    }
+
+
+    .HAPPCC {
+        width: 56%;
+        margin-left: 0%;
+        margin-bottom: 3%;
+    }
+
+    .DELC {
+        width: 41%;
+        margin-left: 0%;
+        padding: 0;
+    }
+    
+    .HSC {
+        width: 53%;        
+    }
+
+    .WRKC {
+        width: 47%;
+    }
+    .about .btn-read-more{
+        line-height: 1;
+    }
+    .vacaText {
+        font-size: 18px;
+    }
+
+    body #vacaPIC {
+        width: 52%;
+    }
+
+    #vacaTRUCKS{
+       display:none;
+    }
+
+    #vacaDRIVER {
+        display: inline;
+        width: 51%;
+        bottom: 135px;
+        position: relative;
+        left: 48%;
+    }
+
+    .about p {
+        margin-top: 10%;
+    }
+}
+
+
